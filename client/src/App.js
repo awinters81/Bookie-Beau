@@ -4,6 +4,16 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
+//Add an import for Apollo...
+
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createLink,
+} from '@apollo/client';
+
+
 function App() {
   return (
     <Router>
